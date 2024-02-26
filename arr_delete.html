@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Delete Element in Array</title>
     <script>
-      // let data = [30, 20, 45, 76, 20, 80]; // array
-      // let position = 3; // index's value/element i.e `76` to be deleted
+      let data = [30, 20, 45, 76, 20, 80]; // array
+      let position = 3; // index's value/element i.e `76` to be deleted
       
       // for (let i = position; i < data.length; i++) {
       //   // console.warn(data[i]);
@@ -14,6 +14,12 @@
       // }
       // data.length = data.length - 1;
       // console.warn(data);
+
+      console.warn(
+        'Using splice() method to delete element: ',
+        data.splice(2, 1)
+      );
+      console.warn('final data array: ', data);
 
       function removeEl() {
         let data = [30, 20, 45, 76, 20, 80]; // array
