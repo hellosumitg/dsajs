@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search(i.e linear search) Element in Array</title>
+    <script>
+      let data = [20, 40, 60, 5, 10, 70, 80, 99];
+      let item = 70;
+      // let index = undefined;
+
+      // for (let i = 0; i < data.length; i++) {
+      // console.warn(data[i])
+      //   if (data[i] === item) {
+      //     index = i;
+      //     break;
+      //   }
+      // }
+      // console.warn(index);
+
+      console.warn(
+        'Using indexOf() method to search element: ',
+        data.indexOf(item)
+      );
+      console.warn(
+        'Using splice() method to delete element: ',
+        data.splice(2, 1)
+      );
+      console.warn('final data array: ', data);
+
+      function searchEl() {
+        let data = [20, 40, 60, 5, 10, 70, 80, 99];
+        let item = document.getElementById('element').value;
+        let index = undefined;
+        for (let i = 0; i < data.length; i++) {
+          // console.warn(data[i])
+          if (data[i] === parseInt(item)) {
+            index = i;
+            break;
+          }
+        }
+        console.warn(index);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" placeholder="enter element or value" id="element" />
+    <button onclick="searchEl()">Search Element</button>
+  </body>
+</html>

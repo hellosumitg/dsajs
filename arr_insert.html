@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Insert Element in an Array</title>
     <script>
-      // let data = [60, 30, 10, 67, 40];
-      // let newEl = 70;
-      // let position = 2;
+      // let data = [60, 30, 10, 67, 40]; // array
+      // let newEl = 70; // inserting value
+      // let position = 2; // at index position
       // console.warn(data);
 
       // // loop starting array from last index and move towards zeroth index
       // for (let i = data.length - 1; i >= 0; i--) {
       //   // console.warn(data[i]);
+      // shifting element by one position
       //   if (i >= position) {
       //     data[i + 1] = data[i];
+      // inserting given element at the given index
       //     if (i == position) {
       //       data[i] = newEl;
       //     }
@@ -32,8 +34,10 @@
         // loop starting array from last index and move towards zeroth index
         for (let i = data.length - 1; i >= 0; i--) {
           // console.warn(data[i]);
+          // shifting element by one position
           if (i >= position) {
             data[i + 1] = data[i];
+            // inserting given element at the given index
             if (i == position) {
               data[i] = newEl;
             }

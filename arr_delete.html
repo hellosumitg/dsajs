@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Element in Array</title>
+    <script>
+      // let data = [30, 20, 45, 76, 20, 80]; // array
+      // let position = 3; // index's value/element i.e `76` to be deleted
+      
+      // for (let i = position; i < data.length; i++) {
+      //   // console.warn(data[i]);
+      //   data[i] = data[i + 1];
+      // }
+      // data.length = data.length - 1;
+      // console.warn(data);
+
+      function removeEl() {
+        let data = [30, 20, 45, 76, 20, 80]; // array
+        let position = document.getElementById('position').value; // index's value/element to be deleted
+        position = parseInt(position);
+        for (let i = position; i < data.length; i++) {
+          // console.warn(data[i]);
+          // moving each element one position behind
+          data[i] = data[i + 1];
+        }
+        data.length = data.length - 1;
+        console.warn(data);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="position" placeholder="enter position"/>
+    <button onclick="removeEl()">Remove Element</button>
+  </body>
+</html>
