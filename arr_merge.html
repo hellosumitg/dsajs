@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merge Two array (in efficient way)</title>
+    <script>
+      let data1 = [3, 7, 12, 34, 56, 90];
+      let data2 = [20, 30, 40, 50];
+      let data3 = [];
+
+      for (let i = 0; i < data1.length; i++) {
+        data3[i] = data1[i];
+      }
+
+      for (let i = 0; i < data2.length; i++) {
+        data3[data1.length + i] = data2[i];
+      }
+      console.warn(data3);
+
+      // for reversing an array using method
+      let dummy1 = [10, 20, 30, 40];
+      console.log(dummy1.reverse());
+
+      // for merging two array using spread operator
+      let dummy2 = [200, 400, 3000];
+      let dummy3 = [...dummy1, ...dummy2];
+      console.log(dummy3);
+    </script>
+  </head>
+  <body></body>
+</html>
